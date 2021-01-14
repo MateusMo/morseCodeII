@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Morse Code Home</title>
+  </head>
+  <body>
+    <nav class="mb-3 navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+          <a class="navbar-brand" href="#">Morse Code</a>
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="table.html">Table</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <section class="container">
+    <div class="row">
+      <div class="col-12 mt-5 mb-4">
+        <h3>You are Welcome!</h3>
+      <p class="text-justify">I've developed this Website to teach you Morse Code. On this page, you will find this text area that transforms your phrase in dots and dashes. You can also click on the blink then the page will become a communicator. In "About" at the menu, I explain how I created the function. If you know nothing about morse code you can first check the "table" at the menu, so you can first practice and after that uses the translate feature.</p>
+        
+      </div>  
+    </div>
+
+      <!--The form elements-->
+      <div class="container showedDiv">
+          <div class="col-12 pb-5">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="email" class="form-control name" id="exampleFormControlInput1" placeholder="Type here your name">
+            </div>
+            <div class="mb-3 col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">text area</label>
+              <textarea class="form-control text textBox2" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <button type="button" class="btn btn-dark getBtn1">Translate</button>
+          </div>
+      </div>
+
+      <!--Hidden Div-->
+      <div class="container answer bg-dark text-light py-3 hiddenDiv">
+        <div class="col-12 pb-5">
+          <h1 id="showCode" class="textBox">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+        </div>
+        <button type="button" class="btn btn-light getBtn2">Shine on</button>
+        <button type="button" class="btn btn-light getBtn3">Write Again</button>
+    </div>
+
+      <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-4 pb-4">
+              <div class="card" style="width: 18rem;">
+                <img src="img/globe.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">International Association</h5>
+                  <p class="card-text">Click here to check the International Association.<br></p>
+                  <a href="https://www.fistsna.org/#:~:text=FISTS%20is%20a%20well%20established,the%20thousands%20and%20growing%20daily." class="btn btn-dark">Go</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 pb-4">
+              <div class="card" style="width: 18rem;">
+                <img src="img/history.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">History</h5>
+                  <p class="card-text">Click here to check the morse code history.</p>
+                  <a href="https://ethw.org/Morse_Code?gclid=CjwKCAiAi_D_BRApEiwASslbJ3bCMVII7lma_zjrgfHsiAOk_GNCANRas3uiQL4BjYMYmQJhnFD0oxoCBVcQAvD_BwE" class="btn btn-dark">Go</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 pb-4">
+              <div class="card" style="width: 18rem;">
+                <img src="img/employee.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jobs</h5>
+                  <p class="card-text">Morse Code and Jobs related.</p>
+                  <a href="https://www.indeed.com/q-Morse-Code-jobs.html" class="btn btn-dark">Go</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+  
+    <script src="js/script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+
+  
+
+</html>
