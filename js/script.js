@@ -1,5 +1,7 @@
-'use strict'
+//Hello, I had a lot of fun writing this code, I really enjoy morse code and I hope you enjoy this project too!
 
+'use strict'
+//getting the classes from the html
 const btnTranslate = document.querySelector('.getBtn1');
 const btnShineOn = document.querySelector('.getBtn2');
 const btnWriteAgain = document.querySelector('.getBtn3');
@@ -11,19 +13,19 @@ let getString = '';
 let body = document.querySelector('body');
 
 
-
+//This function display the morseCode at the screen
 function displayCode(newString,formName){
-
   
   hidden.classList.remove('hiddenDiv');
   showedDiv.classList.add('hiddenDiv');
-  document.querySelector('.textBox').textContent =`${formName} a tradução do seu código é: ${newString} `;
+  document.querySelector('.textBox').textContent =`${formName} the translation of your code is: ${newString} `;
   console.log(newString,formName);
 
    getString = newString;
 
 }
 
+//this function translates the raw string to morseCode
 function morseCode(formText=[],formName){
   
   let newString = '';
@@ -146,12 +148,15 @@ function morseCode(formText=[],formName){
   displayCode(newString,formName);
 }
 
+//These two variables recieve the name and the string
 btnTranslate.addEventListener('click',function(){
   formText = document.querySelector('.text').value;
   formName = document.querySelector('.name').value;
   morseCode(formText,formName);
 });
 
+//The effects of fade in and fade out happens here
+//I've used Jquery to build this effects easier than using just Js
 btnShineOn.addEventListener('click',function(){
   
   for(let x = 0; x < getString.length; x++){
@@ -172,8 +177,11 @@ btnShineOn.addEventListener('click',function(){
     }
   }
   console.log(getString);
+
 });
 
+//This button hides the modal and clean the forms 
+//the user can do everything again
 btnWriteAgain.addEventListener('click',function(){
   hidden.classList.add('hiddenDiv');
   showedDiv.classList.remove('hiddenDiv');  
